@@ -1,0 +1,7 @@
+aid: american-equity-investment-life-holding
+url: https://raw.githubusercontent.com/api-evangelist/american-equity-investment-life-holding/refs/heads/main/apis.yml
+modified: '2026-03-23'
+apis: []
+common:
+  - type: Website
+    url: https://www.american-equity-investment-life-holding.com
