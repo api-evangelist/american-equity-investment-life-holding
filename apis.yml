@@ -1,7 +1,12 @@
 aid: american-equity-investment-life-holding
-url: https://raw.githubusercontent.com/api-evangelist/american-equity-investment-life-holding/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/american-equity-investment-life-holding/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.american-equity-investment-life-holding.com
+description: >-
+  American Equity Investment Life Holding is a financial services company specializing
+  in the sale of fixed indexed and fixed-rate annuity products through independent
+  agents and broker-dealers.
