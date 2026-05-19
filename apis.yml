@@ -20,6 +20,10 @@ image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/American-Equity-Life
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/american-equity
   - type: Website
     url: https://www.american-equity.com
   - type: Portal
