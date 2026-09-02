@@ -1,0 +1,21 @@
+generated: '2026-09-02'
+method: probed
+source: live probes of api.american-equity.com and www.american-equity.com
+limit_count: 0
+rate_limits: []
+headers_observed: []
+note: >-
+  No rate limits are documented, because no API is documented. The one live API host,
+  api.american-equity.com, is an AWS API Gateway that answers 403 {"message":"Forbidden"} on
+  every path; its 403 responses carry no X-RateLimit-*, RateLimit-* or Retry-After header, and
+  its only 200 (/ping, body "Healthy Connection") carries none either. Nothing about the
+  provider's rate-limit posture can be established without credentials, and none is published.
+evidence:
+  - url: https://api.american-equity.com/ping
+    status: 200
+    note: literal body "Healthy Connection"; no rate-limit headers
+  - url: https://api.american-equity.com/openapi.json
+    status: 403
+    note: '{"message":"Forbidden"} — no rate-limit headers'
+  - url: https://www.american-equity.com/llms.txt
+    status: 404

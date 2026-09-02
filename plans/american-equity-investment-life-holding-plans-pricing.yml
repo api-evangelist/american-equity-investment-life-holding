@@ -1,0 +1,23 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.american-equity.com/professionals/rates-and-indexes/
+plan_count: 0
+plans: []
+note: >-
+  American Equity publishes no API plans or developer pricing of any kind, because it publishes
+  no API. The company sells fixed indexed and fixed-rate annuity contracts through contracted
+  independent agents and broker-dealers; product economics are expressed as declared interest
+  rates, index participation rates, caps and spreads on the rates-and-indexes page, not as
+  subscription tiers, quotas or overage. Annuity contract rates are deliberately NOT recorded
+  here as plans — they are insurance product terms, not API commercial terms, and mapping one
+  onto the other would misrepresent both.
+evidence:
+  - url: https://www.american-equity.com/professionals/rates-and-indexes/
+    status: 200
+    note: product rates and index crediting options for contracted financial professionals
+  - url: https://www.american-equity.com/our-annuities/
+    status: 200
+    note: consumer product line; no pricing tiers
+  - url: https://www.american-equity.com/sitemap.xml
+    status: 200
+    note: 50 URLs, none of them a developer pricing or API plan page

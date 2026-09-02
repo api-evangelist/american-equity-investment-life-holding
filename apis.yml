@@ -62,6 +62,32 @@ common:
   - type: Portal
     url: https://register.american-equity.com
     name: Customer MyPortal
+  - type: Security
+    url: https://www.american-equity.com/security-disclosure
+    name: Security Disclosure
+  - type: VulnerabilityDisclosure
+    url: security/american-equity-investment-life-holding-vulnerability-disclosure.yml
+  - type: LLMsTxt
+    url: llms/american-equity-investment-life-holding-llms.txt
+  - type: SignUp
+    url: https://register.american-equity.com
+    name: Register
+  - type: Login
+    url: https://myportal.american-equity.com/
+    name: MyPortal
+  - type: Support
+    url: https://www.american-equity.com/contact-us
+    name: Contact Us
+  - type: HelpCenter
+    url: https://www.american-equity.com/professionals/contact-us
+    name: Financial Professional Support
+  - type: Blog
+    url: https://www.american-equity.com/insights/
+    name: Insights
+  - type: TermsOfService
+    url: https://www.american-equity.com/terms-of-use
+  - type: PrivacyPolicy
+    url: https://www.american-equity.com/privacy
   - type: Features
     data:
       - name: Fixed Indexed Annuities
@@ -124,8 +150,38 @@ common:
           Compatibility with financial planning software used by independent agents to
           illustrate and recommend annuity products to clients.
 created: '2024-11-15'
-modified: '2026-04-19'
+modified: '2026-09-02'
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 specificationVersion: '0.23'
+
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    American Equity is an annuity carrier whose only integration surfaces are authenticated
+    human web apps — MyPortal for contract owners and contracted agents, AppBuilder, and a
+    product-training LMS; api.american-equity.com is a live AWS API Gateway backing MyPortal
+    that answers 403 {"message":"Forbidden"} on every path except /ping, there is no developer
+    portal, no /llms.txt, no /.well-known document on any host, and the American-Equity-Life
+    GitHub org publishes zero public repositories.
+  evidence:
+    - url: https://api.american-equity.com/openapi.json
+      status: 403
+    - url: https://api.american-equity.com/ping
+      status: 200
+    - url: https://www.american-equity.com/openapi.json
+      status: 404
+    - url: https://www.american-equity.com/llms.txt
+      status: 404
+    - url: https://www.american-equity.com/.well-known/api-catalog
+      status: 404
+    - url: https://api.github.com/orgs/American-Equity-Life/repos
+      status: 200
+  checked: '2026-09-02'

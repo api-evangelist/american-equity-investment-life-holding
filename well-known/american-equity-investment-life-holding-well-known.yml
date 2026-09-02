@@ -1,0 +1,117 @@
+generated: '2026-09-02'
+method: probed
+source: live HTTP probes of every American Equity host reachable from apis.yml and the site nav
+note: >-
+  No /.well-known document is served on any American Equity host. www.american-equity.com,
+  register.american-equity.com and training.american-equity.com return clean 404s;
+  api.american-equity.com and app.american-equity.com sit behind an AWS API Gateway that
+  answers {"message":"Forbidden"} (403) on every path including /.well-known/*.
+  myportal.american-equity.com is a client-side SPA whose catch-all route answers 200 with the
+  same HTML shell for EVERY path — those 200s are recorded here as shell, not as documents,
+  and are deliberately NOT credited. Because nothing returned a real document, this repo
+  emits NO WellKnown and NO SecurityTxt pointer in apis.yml.
+hosts:
+  - host: www.american-equity.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: register.american-equity.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: api.american-equity.com
+    note: >-
+      Live AWS API Gateway backing the MyPortal single-page app. Every path returns 403
+      {"message":"Forbidden"}; only /ping answers 200 with the literal body "Healthy Connection".
+      This is a private backend for American Equity's own portal, not a published product API,
+      so no apis[] entry is asserted for it.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+  - host: app.american-equity.com
+    note: AppBuilder form-generation tool; same API Gateway 403 posture as api.american-equity.com.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+  - host: training.american-equity.com
+    note: Product-training LMS for contracted financial professionals.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: myportal.american-equity.com
+    note: >-
+      SPA catch-all. Returns HTTP 200 with an identical HTML shell for every probed path
+      (/.well-known/security.txt, /.well-known/agent-card.json, /openapi.json, /llms.txt,
+      /config.json). NOT documents — recorded as shell and scored as a miss.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        result: html-shell
+      - path: /.well-known/openid-configuration
+        status: 200
+        result: html-shell
+      - path: /.well-known/api-catalog
+        status: 200
+        result: html-shell
+      - path: /.well-known/agent-card.json
+        status: 200
+        result: html-shell
+      - path: /.well-known/agent.json
+        status: 200
+        result: html-shell
