@@ -1,7 +1,9 @@
 ---
 title: American Equity Recognized for Award-Winning Customer ...
 url: https://www.businesswire.com/news/home/20221031005652/en/American-Equity-Recognized-for-Award-Winning-Customer-Satisfaction-Among-Annuity-Providers-in-the-U.S.-by-J.D.-Power
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Equity Investment Life Holding" press release artificial intelligence'
 position: 2
 source: serpapi-google

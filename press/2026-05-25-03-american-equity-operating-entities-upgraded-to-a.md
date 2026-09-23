@@ -1,7 +1,9 @@
 ---
 title: American Equity Operating Entities Upgraded To 'A
 url: https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3165704
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"American Equity Investment Life Holding" press release artificial intelligence'
 position: 3
 source: serpapi-google
