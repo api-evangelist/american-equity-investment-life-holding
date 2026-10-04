@@ -9,7 +9,7 @@ description: >-
   GuaranteeShield annuities, providing retirees with lifetime income, principal protection,
   tax-deferred growth, and legacy planning options.
 tags:
-  - Financial-Services
+  - Financial Services
   - Insurance
   - Annuities
   - Fixed Indexed Annuity
@@ -24,6 +24,7 @@ tags_raw:
   - Retirement
   - Life Insurance
   - Fortune 1000
+  - Financial-Services
 type: Index
 deliveryModel:
   model: unknown
