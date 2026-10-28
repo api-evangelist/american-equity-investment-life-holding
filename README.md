@@ -1,4 +1,4 @@
-# American Equity Investment Life Holding (american-equity-investment-life-holding)
+# American Equity Investment Life Holding
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,54 +66,97 @@
 
 American Equity Investment Life Holding Company is a leading provider of guaranteed income solutions, specializing in the design, development, and sale of fixed indexed and fixed-rate annuity products distributed through independent agents and broker-dealers. The company offers products including IncomeShield, AssetShield, EstateShield, and GuaranteeShield annuities, providing retirees with lifetime income, principal protection, tax-deferred growth, and legacy planning options.
 
-**URL:** [https://www.american-equity.com](https://www.american-equity.com)
+**Areas:** Financial Services · Insurance · Annuities · Fixed Indexed Annuity · Retirement · Life Insurance · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## American Equity Investment Life Holding on APIs.io
 
-## Tags:
+Everything profiled for American Equity Investment Life Holding is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/american-equity-investment-life-holding/](https://apis.io/providers/american-equity-investment-life-holding/)** — or go straight to one of the APIs or properties below.
 
- - Financial Services, Insurance, Annuities, Fixed Indexed Annuity, Retirement, Life Insurance
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2024-11-15
-- **Modified:** 2026-04-19
+#### Security (2)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [American Equity Investment Life Holding Domain Security](https://apis.io/security/american-equity-investment-life-holding/american-equity-investment-life-holding-domain-security/)
+- [American Equity Investment Life Holding Vulnerability Disclosure](https://apis.io/security/american-equity-investment-life-holding/american-equity-investment-life-holding-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [American Equity Investment Life Holding Plans Pricing](https://apis.io/plans/american-equity-investment-life-holding/american-equity-investment-life-holding-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [American Equity Investment Life Holding Rate Limits](https://apis.io/rate-limits/american-equity-investment-life-holding/american-equity-investment-life-holding-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.american-equity.com)
-- [Customer MyPortal](https://register.american-equity.com)
+- [Sign up](https://register.american-equity.com)
+- [Support](https://www.american-equity.com/contact-us)
+- [Blog](https://www.american-equity.com/insights/)
+- [Security](https://www.american-equity.com/security-disclosure)
+- [Terms of service](https://www.american-equity.com/terms-of-use)
+- [Privacy policy](https://www.american-equity.com/privacy)
+- [GitHub](https://github.com/American-Equity-Life)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Fixed Indexed Annuities | Fixed Index Annuities (FIAs) such as IncomeShield, AssetShield, and EstateShield that provide index-linked growth potential with protection from market downside, tax-deferred growth, and guaranteed lifetime income options. |
-| Fixed Annuities | GuaranteeShield fixed annuity products offering guaranteed interest rates, principal protection, tax-deferred growth, and flexible withdrawal options for conservative retirement savers. |
-| Immediate Annuities | Immediate annuity contracts converting lump sums into guaranteed income payments starting within 12 months, available for lifetime or fixed periods of 5 to 25 years. |
-| Lifetime Income Guarantee | Guaranteed lifetime income riders and payout options ensuring customers cannot outlive their retirement savings regardless of market performance. |
-| Index Crediting Strategies | Multiple index crediting options including S&P 500, BlackRock Adaptive U.S. Equity, BNPP Patriot Technology Index, Nasdaq Premier, and NYSE Premier indices. |
-| Independent Agent Distribution | Annuity products distributed exclusively through a network of independent insurance agents and broker-dealers, providing broad access for retirement planning clients. |
+**Kin Score 17.6** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 34.2 |
 
-| Name | Description |
-|------|-------------|
-| Retirement Income Planning | Creating guaranteed lifetime income streams for retirees concerned about outliving their savings, providing predictable monthly income regardless of market conditions. |
-| Principal Protection | Protecting retirement assets from market losses while still participating in index-linked growth during favorable market conditions. |
-| Tax-Deferred Growth | Accumulating retirement savings on a tax-deferred basis, allowing compound growth without annual tax liability until withdrawals begin. |
-| Legacy and Estate Planning | Using EstateShield annuities to combine retirement income security with legacy planning to pass assets to heirs. |
-| Conservative Retirement Savings | Providing a low-risk alternative to market investments for pre-retirees seeking guaranteed growth through fixed annuity products. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Independent Broker-Dealer Networks | Integration with national and regional broker-dealer networks to distribute annuity products through registered investment advisors and insurance agents. |
-| Financial Planning Platforms | Compatibility with financial planning software used by independent agents to illustrate and recommend annuity products to clients. |
+**Regulatory alignment 17.5** — Insurance
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/american-equity-investment-life-holding/](https://apis.io/providers/american-equity-investment-life-holding/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for American Equity Investment Life Holding: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/american-equity-investment-life-holding/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
